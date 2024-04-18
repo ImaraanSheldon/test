@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    max-height: auto;
+    max-width: 100%;
+    background-color: #300319;
+}
+/*NAVBAR & LOGO*/
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    list-style-type: none ;
+}
+
+li{
+    display:inline;
+}
+li a{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+li a:hover{
+    color: purple;
+}
+.logo{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 120px;
+    height: 100px;
+}
+
+/*HERO*/
+.hero{
+    width: 100%;
+   /* height: auto;*/
+    height: 400px;
+    background-color: blue;
+    margin-bottom: 10px;
+}
+
+.filler{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom:10px;
+
+}
+
+.contentBox{
+ 
+    width: 50%;
+    height: 300px;
+    background-color: black;
+}
+.infoBox{
+    width: 50%;
+    height: 300px;
+    background-color: white;
+}
+.grid1{
+    display:grid;
+    width: 60%;
+    height: 300px;
+    grid-template-rows:1/3;
+    grid-template-columns:1/2;
+    gap:5px;
+}
+.contentBoxImg1{
+    grid-row:1/2;
+    grid-column:1/2;
+    background-color: orangered;
+}
+.contentBoxImg2{
+    grid-row:2/3;
+    grid-column:1/-1;
+    background-color: purple;
+}
+.infoBox2{
+    width: 40%;
+    height: 300px;
+    background-color: white;
+}
+
+.grid2{
+    display:grid;
+    grid-template-rows: 1/4;
+    grid-template-columns: 1/7;
+    width:100%;
+    height:400px;
+    gap:5px;
+}
+.imgSource{
+    grid-row:1/3;
+    grid-column:1/3;
+    background-color: grey;
+}
+.imgSource2{
+    grid-row:1/3;
+    grid-column:3/5;
+    background-color: darkblue;
+}
+.imgSource3{
+    grid-row:1/3;
+    grid-column:5/7;
+    background-color: grey;
+}
+.txtSource{
+    grid-row:3/4;
+    grid-column:1/3;
+    background-color: peachpuff;
+}
+.txtSource2{
+    grid-row:3/4;
+    grid-column:3/5;
+    background-color: honeydew;
+}
+.txtSource3{
+    grid-row:3/4;
+    grid-column:5/7;
+    background-color: pink;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+}
+    </style>
+</head>
+<body>
+    
+    <section class="head">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/Raisins.png">
+            </a>
+        </div>
+
+        <div>
+            <ul class="menu">
+                <li>
+                    <a href="#"><span>ALPHABETICAL</span></a>
+                </li>
+                <li>
+                    <a href="#"><aspan>GRADE</aspan></a>
+                </li>
+                <li>
+                    <a href="#"><span>AGE</span></a>
+                </li>
+                <li>
+                    <a href="#"><span>BIRTHDATE</span></a>
+                </li>
+            </ul>
+        </div>
+
+</section>
+
+<section>
+    <div class="hero">
+
+    </div>
+</section>
+
+<section class ="filler">
+    <div class="contentBox">    
+
+    </div>
+
+    <div class=" infoBox">
+
+    </div>
+</section>
+
+<section class ="filler">
+    <div class=" infoBox2">
+        <p>please input your query</p>
+
+        <form action="/action_page.php">
+            <input type="text" name="message">.</input>
+        </form>
+    </div>
+
+    <div class="grid1">
+        <div class="contentBoxImg1">    
+
+        </div>
+        <div class="contentBoxImg2">    
+
+        </div>
+    </div>
+</section>
+
+<section class="filler">
+     <div class="grid2">
+
+            <div class="imgSource"></div>
+            <div class="imgSource2"></div>
+            <div class="imgSource3"></div>
+
+            <div class="txtSource"></div>
+            <div class="txtSource2"></div>
+            <div class="txtSource3"></div>
+            
+     </div>
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
